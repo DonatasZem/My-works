@@ -1,0 +1,105 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.blur {
+    filter: blur(8px);
+}
+
+.main::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.main {
+    transition: ease-in-out 0.4s;
+    background-image: url('foj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.date {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.date h4 {
+    margin: 5px 0px;
+    font-weight: 200;
+    font-size: 4rem;
+    color: white;
+}
+
+.date p {
+    font-weight: 100;
+    margin: 0px;
+    color: white;
+    font-size: 2rem;
+}
+
+.login {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.login p {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.icon-div {
+    margin: 0 auto;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(120, 169, 243);
+}
+
+.icon-div i {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inp-btn {
+    border: solid 1px grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inp-btn input {
+    border: none;
+    outline: none;
+    padding: 4px;
+}
+
+.inp-btn button {
+    border: none;
+}
+
+.alert .error {
+    font-size: 1.2rem;
+    color: rgb(26, 24, 24);
+}
