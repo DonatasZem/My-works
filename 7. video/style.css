@@ -1,0 +1,93 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: visible;
+    z-index: 999;
+}
+
+.hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    z-index: -1;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.btn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.btn span {
+    display: inline-block;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+.switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: royalblue;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+
+/* kad .switch elementas pajudetu butent .slide elemente */
+.slide .switch {
+    left: 50%;
+}
+
+
+section {
+    padding: 120px 0;
+}
