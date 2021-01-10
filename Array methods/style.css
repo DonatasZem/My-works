@@ -1,0 +1,105 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container input {
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    padding: 5px 10px;
+    width: 40%;
+}
+
+#create-btn {
+    transition: .4s ease-out;
+    border: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    outline: none;
+}
+
+#create-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.your-array-a {
+    margin-right: 10px;
+    background-color: greenyellow;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+#array-methods button {
+    transition: .4s ease-out;
+    background-color: mediumseagreen;
+    margin-right: 10px;
+    border: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 8px;
+    outline: none;
+}
+
+#array-methods button:hover {
+    background-color: mediumspringgreen;
+    padding: 10px 18px;
+}
+
+.main-page {
+    position: relative;
+    padding: 37px 0;
+    height: 90vh;
+}
+
+.main-push-div {
+    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006b;
+}
+
+.push-div {
+    padding: 20px 10px;
+    border-radius: 8px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.push-div h4 {
+    padding-bottom: 10px;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+}
+
+.push-div input {
+    width: 50%;
+}
+
+.push-div button {
+    transition: .4s ease-out;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.push-div button:hover {
+    background-color: chartreuse;
+}
